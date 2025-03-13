@@ -1,4 +1,10 @@
+This is Micro:Snake, where it is snake, but you can play it on the Micro:Bit!
+This is still in development, so expect some bugs.
 
+
+
+
+OG Documentation:
 > Open this page at [https://funfunido.github.io/micro-snake/](https://funfunido.github.io/micro-snake/)
 
 ## Use as Extension
