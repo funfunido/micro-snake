@@ -20,7 +20,31 @@ function refreshScreen() {
 
 refreshScreen();
 
+input.onLogoEvent(TouchButtonEvent.Pressed, function() {
+    if (playerPosition[1] === 0) {
+        playerPosition[1] = 4;
+        refreshScreen();
+    }
+    else {
+        playerPosition[1] = (playerPosition[1] - 1);
+        refreshScreen();
+    }
 
+})
+
+
+
+input.onPinPressed(TouchPin.P2, function() {
+    if (playerPosition[1] === 4) {
+        playerPosition[1] = 0;
+        refreshScreen();
+    }
+    else {
+        playerPosition[1] = (playerPosition[1] + 1);
+        refreshScreen();
+    }
+
+})
 input.onButtonPressed(Button.B, function () {
     if (playerPosition[0] === 4) {
         playerPosition[0] = 0;
